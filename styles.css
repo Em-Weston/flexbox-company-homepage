@@ -109,13 +109,15 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     background-color: #DEE1D4;
+    padding-top: 10px;
 }
 
 .values {
     height: 300px;
     width: 400px;
     border-radius: 10%;
-    border: 5px solid #575757
+    border: 5px solid #575757;
+    flex-shrink: 5;
 }
 .value {
     text-align: center;
@@ -146,22 +148,35 @@ h3 {
 }
 
 .img {
-    height: 400px;
-    width: 300px;
+    height: 500px;
+    width: 400px;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
 }
-/* .align {
-    align-self: center;
+.align {
+    margin-left: 30px;
+    text-align: justify;
 }
+
 .name {
-    margin-left: 10px;
-} */
+   font-weight: 800;
+   margin-top: 30px;
+}
 
 .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+}
+.price {
+    font-weight: bold;
+    font-size: 2rem;
+}
+/* about us section */
+#aboutUs {
+    display: flex;
+    flex-direction: column;
+    background-color: #DEE1D4;
 }
