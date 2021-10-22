@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
 } 
 
 /* Header section */
@@ -16,16 +17,16 @@
     top: 0;
     z-index: 1;
     background-color: white;
-    border-bottom: 5px solid #575757;
+    border-bottom: 0.3rem solid #575757;
 }
 .menu {
-    width: 50%;
+    width: 100%;
     
 }
 
 li, a {
     display: inline;
-    margin-right: 30px;
+    margin-right: 1.8rem;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -45,11 +46,12 @@ a:hover {
     background-color: #DEE1D4;
     width: 100%;
     /* margin-top: 50px; */
-    height: 600px;
-    margin-right: 20px;
+    height: 37.5rem;
+    margin-right: 1.25rem;
     position: relative;
     border-top: 5px solid #575757;
     border-bottom: 5px solid #575757;
+    flex-shrink: 3;
 }
 
 .shape {
@@ -68,6 +70,7 @@ a:hover {
   font-style: italic;
   text-align: center;
   align-self: center;
+  flex-shrink: 3;
 }
 /* Mission statement */
 
@@ -76,8 +79,10 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     /* align-content: center; */
-    height: 400px;
+    height: 25rem;
     align-items: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 3;
 }
 
 h2 {
@@ -86,20 +91,24 @@ h2 {
     font-family:  'Open Sans', sans-serif;
     font-weight: 700;
     text-decoration: underline;
+    flex-shrink: 3;
 }
 
 .center {
     align-self: center;
+    flex-shrink: 3;
 }
 p {
     font-size: 1.5rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    flex-shrink: 3;
 } 
 h3 {
     font-size: 1.8rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    flex-shrink: 3;
 }
 
 /* Cruelty free and vegan cards */
@@ -109,7 +118,8 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     background-color: #DEE1D4;
-    padding-top: 10px;
+    padding-top: 0.6rem;
+    flex-wrap: wrap;
 }
 
 .values {
@@ -121,8 +131,8 @@ h3 {
 }
 .value {
     text-align: center;
+    flex-shrink: 3;
 }
-
 /* PRODUCTS section*/
 
 #products {
@@ -136,7 +146,8 @@ h3 {
     display: flex;
     flex-direction: row;
     border: 5px solid #575757;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
+    flex-wrap: wrap;
 }
 
 .pro-img {
@@ -157,6 +168,7 @@ h3 {
 .align {
     margin-left: 30px;
     text-align: justify;
+    flex-wrap: wrap;
 }
 
 .name {
@@ -179,4 +191,64 @@ h3 {
     display: flex;
     flex-direction: column;
     background-color: #DEE1D4;
+    flex-wrap: wrap;
+}
+
+.people {
+    height: 400px;
+    width: 300px;
+    border: 5px solid #575757;
+}
+
+.members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 5px solid #575757; */
+    flex-wrap: wrap;
+}
+
+.role {
+    font-style: italic;
+    text-align: center;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.pup {
+    width: 400px;
+    height: 300px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 400px;
+}
+
+.p {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 400px;
+}
+
+.spaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contactH2 {
+    text-align: center;
 }
